@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node server.js",
     "test": "mocha",
-    "heroku-postbuild": "knex migrate:rollback; knex migrate:latest; knex seed:run;"
+    "heroku-postbuild": "knex migrate:rollback; knex migrate:latest; knex seed:run;",
+    "nodemon": "node server.js"
   },
   "keywords": [],
   "author": "",
