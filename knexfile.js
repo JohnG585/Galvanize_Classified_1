@@ -15,6 +15,10 @@ module.exports = {
       database: process.env.DATABASE_URL || 'classifieds'
     }},
 
-  production: { },
+  production: {
+    client: 'pg',
+    connections: {
+        database: process.env.DATABASE_URL
+    }},
 
 };
