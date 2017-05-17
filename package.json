@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "main": "server.js",
   "license": "MIT",
+  "engines" :{
+    "node": "v7.7.2"
+  },
   "scripts": {
     "start": "node server.js",
     "test": "mocha",
-    "heroku-postbuild": "knex migrate:rollback; knex migrate:latest; knex seed:run;" 
+    "heroku-postbuild": "knex migrate:rollback; knex migrate:latest; knex seed:run;"
   },
   "keywords": [],
   "author": "",
