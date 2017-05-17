@@ -2,8 +2,19 @@
 
 module.exports = {
 
-  development: { },
-  test: { },
+  development: {
+    client: 'pg',
+    connection: {
+      database: process.env.DATABASE_URL || 'classifieds'
+    }
+  },
+
+  test: {
+    client: 'pg',
+    connection: {
+      database: process.env.DATABASE_URL || 'classifieds'
+    }},
+
   production: { },
 
 };
